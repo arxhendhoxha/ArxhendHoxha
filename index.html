@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arxhend Hoxha</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ <div class="main">
+   <div class="navbar">
+     <img src="logo.png" class="logo">
+     <ul>
+       <li><a href="#" class="kryefaqja">KRYEFAQJA</a></li>
+       <li><a href="kontakti.html" class="kontakti">KONTAKTI</a></li>
+     </ul>
+     <img src="hana.png" class="hana" id="icon">
+   </div>
+ </div>
+ <div class="pershkrimi">
+  <h3>I am <span>Arxhend Hoxha</span> a Beginner</h3>
+   <h1><span>W</span>eb <span>D</span>eveloper</h1>
+   <p>In my future I will be a Professional Full Stack Web Developer</p>
+   <a href="https://download1479.mediafire.com/2n05jthft1ag/eqy7b924a1rh73p/Arxhend+Hoxha+CV.doc">Download CV</a>
+ </div>
+ <div class="image">
+   <img src="une.png" class="une">
+ </div>
+ <script>
+
+   var icon = document.getElementById("icon");
+
+   icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+      icon.src = "dielli.png";
+    }else{
+      icon.src = "hana.png";
+    }
+   }
+
+ </script>
+</body>
+</html>

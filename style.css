@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0;
+	background-color: var(--primary-color);
+	overflow: hidden;
+}
+:root{
+    --primary-color: lightgrey;
+	--secondary-color: darkgoldenrod;
+	--third-color: rgb(36,32,30);
+	--fourth-color: black;
+}
+.dark-theme {
+    --primary-color: #000106;
+	--secondary-color: darkgoldenrod;
+	--third-color: #fff;
+	--fourth-color: blanchedalmond;
+}
+.navbar{
+	width: 100%;
+	display: flex;
+	margin: auto;
+	padding: 2px 0;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar .logo{
+	width: 160px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-left: 1%;
+}
+ul{
+	margin-left: auto;
+	margin-top: 2%;
+	margin-right: 70px;
+}
+ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 16px 16px;
+}
+.navbar .hana{
+	width: 40px;
+	margin-right: 3%;
+	margin-top: 2%;
+}
+ul li a{
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--secondary-color);
+	border: 1px solid var(--fourth-color);
+	padding: 15px;
+	border-radius: 20px;
+	transition: .4s ease;
+}
+ul li a:hover{
+	color: blanchedalmond;
+	background-color: var(--secondary-color);
+}
+.pershkrimi{
+	height: 100vh;
+	margin-left: 14%;
+	margin-top: 13%;
+	letter-spacing: 1px;
+}
+.pershkrimi h1{
+	font-size: 80px;
+	color: var(--third-color);
+	padding: 10px 0px;
+}
+.pershkrimi h3{
+	font-size: 25px;
+	letter-spacing: 1px;
+	line-height: 24px;
+	color: var(--third-color);
+}
+.pershkrimi p{
+	color: var(--third-color);
+	font-size: 18px;
+}
+.pershkrimi span{
+	color: var(--secondary-color);
+}
+.pershkrimi a{
+	text-decoration: none;
+	color: var(--secondary-color);
+	font-family: sans-serif;
+	border: 1px solid var(--fourth-color);
+	margin: 26px 0;
+	padding: 10px 18px;
+	border-radius: 20px;
+	display: inline-block;
+	transition: 0.4s ease;
+}
+.pershkrimi a:hover{
+	color: blanchedalmond;
+	background: var(--secondary-color);
+}
+.image{
+	width: 40%;
+	height: 80%;
+	position: absolute;
+	right: 100px;
+	bottom: 0;
+}
+.image img{
+	position: absolute;
+	height: 900px;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 0;
+	transition: left 2s ease;
+}
+.image:hover .une{
+	left: 55%;
+}
+@media screen and (max-width: 1374px){
+        div.image{
+        	display: none;
+         }
+         div.pershkrimi{
+         	padding: 10px;
+         	margin-left: 0;
+	     margin-top: 30%;
+	     text-align: center;
+         }
+         .kryefaqja{
+         	display: none;
+         }
+         ul{
+         	text-align: center;
+         }
+}
